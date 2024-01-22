@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- for school code   -->
+    <record id="device_sequence_code" model="ir.sequence">
+            <field name="name">Device Sequence Code</field>
+            <field name="code">device.type</field>
+            <field name="prefix">DEVICE</field>
+            <field name="number_increment">1</field>
+    </record>
+</odoo>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Creating menu and submenus   -->
+    <menuitem id="menu_device_root"
+              name="Device"
+              sequence="1"/>
+
+    <menuitem id="menu_device_device"
+              name="Device"
+              parent="menu_device_root"/>
+
+    <menuitem id="menu_device_details"
+              name="Device Details"
+              parent="menu_device_device"
+              action="action_device"
+              sequence="1"/>
+
+    <menuitem id="menu_device_type"
+              name="Device Type"
+              parent="menu_device_device"
+              action="action_device_type"
+              sequence="2"/>
+
+    <menuitem id="menu_device_model"
+              name="Device Models"
+              parent="menu_device_device"
+              action="action_device_model"
+              sequence="3"/>
+
+    <menuitem id="menu_device_brand"
+              name="Device Brands"
+              parent="menu_device_device"
+              action="action_device_brand"
+              sequence="4"/>
+
+    <menuitem id="menu_device_attribute"
+              name="Device Attributes"
+              parent="menu_device_root"/>
+
+    <menuitem id="menu_device_attributes"
+              name="Device Attributes"
+              parent="menu_device_attribute"
+              action="action_device_attribute"
+              sequence="1"/>
+
+    <menuitem id="menu_device_assignment"
+              name="Device Assignment"
+              parent="menu_device_attribute"
+              action="action_device_assignment"
+              sequence="2"/>
+
+    <menuitem id="menu_device_attribute_value"
+              name="Device Attribute Value"
+              parent="menu_device_attribute"
+              action="action_device_attribute_value"
+              sequence="3"/>
+
+    <menuitem id="menu_device_attribute_assignment"
+              name="Device Attribute Assignment"
+              parent="menu_device_attribute"
+              action="action_device_attribute_assignment"
+              sequence="4"/>
+
+    <menuitem id="menu_device_employee"
+              name="Device Employee"
+              parent="hr.menu_hr_root"
+              action="action_employee"/>
+
+</odoo>
