@@ -7,4 +7,3 @@ from . import device_brand
 from . import device_model
 from . import device_type
 from . import employee
-# from . import db_connection

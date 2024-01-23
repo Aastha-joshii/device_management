@@ -11,6 +11,9 @@
                         <field name="device_ids"/>
                     </page>
                 </xpath>
+                <xpath expr="//button[@name='152']" position="after">
+                    <button name="action_done" string="Done" type="object" class="oe_highlight"/>
+                </xpath>
             </field>
         </record>
 
