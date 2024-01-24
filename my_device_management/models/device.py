@@ -1,4 +1,5 @@
-from odoo import models, fields
+from odoo import models, fields, api, sql_db, SUPERUSER_ID
+import contextlib
 
 
 class Device_Management(models.Model):
@@ -18,3 +19,10 @@ class Device_Management(models.Model):
          'unique(name)',
          'Device name has to be unique')
     ]
+
+    # def create(self, vals):
+    #     connection = sql_db.db_connect('odoo17_school_mgm')
+    #     with contextlib.closing(connection.cursor()) as cr:
+    #         cr._cnx.autocommit = True
+    #         env = api.Environment(cr, SUPERUSER_ID, {})
+    #         env['device.device'].create({'name': self.name})
