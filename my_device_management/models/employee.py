@@ -1,4 +1,5 @@
 import contextlib
+import psycopg2
 from odoo import models, fields, api, sql_db, SUPERUSER_ID
 
 
@@ -13,3 +14,4 @@ class Device_Management(models.Model):
             cr._cnx.autocommit = True
             env = api.Environment(cr, SUPERUSER_ID, {})
             env['hr.employee'].create({'name': self.name, 'mobile_phone': self.mobile_phone, 'work_phone': self.work_phone})
+
