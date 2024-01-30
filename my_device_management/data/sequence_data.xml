@@ -3,7 +3,7 @@
     <!-- for school code   -->
     <record id="device_sequence_code" model="ir.sequence">
             <field name="name">Device Sequence Code</field>
-            <field name="code">device.type</field>
+            <field name="code">device.type.code</field>
             <field name="prefix">DEVICE</field>
             <field name="number_increment">1</field>
     </record>

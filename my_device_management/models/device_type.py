@@ -21,5 +21,5 @@ class Device_Management(models.Model):
 
     @api.model
     def create(self, vals_list):
-        vals_list['sequence_number'] = self.env['ir.sequence'].next_by_code('device.type')
+        vals_list['sequence_number'] = self.env['ir.sequence'].next_by_code('device.type.code')
         return super(Device_Management, self).create(vals_list)
